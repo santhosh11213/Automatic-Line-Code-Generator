@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Line Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Automatic Line Code Generator</h1>
+    </header>
+    <main>
+        <section id="input-section">
+            <h2>Generate Barcodes</h2>
+            <form id="generate-form">
+                <label for="brand-select">Brand:</label>
+                <select id="brand-select" required>
+                    <option value="">Select Brand</option>
+                    <option value="Brand A">Brand A</option>
+                    <option value="Brand B">Brand B</option>
+                    <option value="Brand C">Brand C</option>
+                </select>
+                <label for="subbrand-select">Sub Brand:</label>
+                <select id="subbrand-select" required>
+                    <option value="">Select Sub Brand</option>
+                    <option value="Sub A1">Sub A1</option>
+                    <option value="Sub A2">Sub A2</option>
+                    <option value="Sub B1">Sub B1</option>
+                    <option value="Sub B2">Sub B2</option>
+                    <option value="Sub C1">Sub C1</option>
+                    <option value="Sub C2">Sub C2</option>
+                </select>
+                <label for="product-select">Product:</label>
+                <select id="product-select" required>
+                    <option value="">Select Product</option>
+                    <option value="Product 1">Product 1</option>
+                    <option value="Product 2">Product 2</option>
+                    <option value="Product 3">Product 3</option>
+                </select>
+                <label for="count-input">Number of Barcodes:</label>
+                <input type="number" id="count-input" min="1" required>
+                <button type="submit" id="generate-btn">Generate</button>
+            </form>
+            <div id="output-section">
+                <h3>Generated Barcodes</h3>
+                <pre id="output-code"></pre>
+            </div>
+        </section>
+        <section id="history-section">
+            <h2>Activity History</h2>
+            <ul id="history-list"></ul>
+            <div id="pagination">
+                <button id="prev-btn">Previous</button>
+                <select id="page-select"></select>
+                <button id="next-btn">Next</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html></content>
+<parameter name="filePath">d:\New folder\OneDrive\Documents\GitHub\Automatic Line Code Generator\index.html
