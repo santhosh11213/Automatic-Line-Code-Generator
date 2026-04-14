@@ -1,0 +1,22 @@
+{
+  "name": "mini-project",
+  "version": "1.0.0",
+  "description": "A web tool to generate barcode labels with JsBarcode.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santhosh11213/Automatic-Line-Code-Generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/santhosh11213/Automatic-Line-Code-Generator/issues"
+  },
+  "homepage": "https://github.com/santhosh11213/Automatic-Line-Code-Generator#readme"
+}
