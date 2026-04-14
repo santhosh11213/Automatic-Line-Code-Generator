@@ -23,7 +23,37 @@ document.getElementById('generate-form').addEventListener('submit', function(e) 
     }
 
     // Display generated barcodes
-    document.getElementById('output-code').textContent = barcodes.join('\n');
+    const barcodeContainer = document.getElementById('barcodeContainer');
+    barcodeContainer.innerHTML = '';
+
+    // First, create and append all barcode cards
+    barcodes.forEach(function(code) {
+        const card = document.createElement('div');
+        card.className = 'barcode-card';
+        card.innerHTML = `
+            <svg class="barcode-svg" data-value="${code}"></svg>
+            <p>${code}</p>
+        `;
+        barcodeContainer.appendChild(card);
+    });
+
+    // After all cards are appended to the DOM, run JsBarcode
+    document.querySelectorAll('.barcode-svg').forEach(function(svg) {
+        const code = svg.getAttribute('data-value');
+        try {
+            JsBarcode(svg, code, {
+                format: 'CODE128',
+                width: 1.5,
+                height: 60,
+                displayValue: false,
+                margin: 8,
+                lineColor: '#000000',
+                background: '#ffffff'
+            });
+        } catch (error) {
+            console.error('JsBarcode error:', error);
+        }
+    });
 
     // Add to history
     const history = getHistory();

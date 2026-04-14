@@ -103,3 +103,38 @@ li {
 #page-select {
     padding: 0.5rem;
 }
+
+.barcode-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.barcode-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.barcode-svg {
+    max-width: 100%;
+    height: auto;
+}
+
+.barcode-card p {
+    margin: 5px 0 0;
+    font-size: 12px;
+    font-family: monospace;
+    font-weight: bold;
+    color: #333;
+}

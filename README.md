@@ -1,18 +1,22 @@
 # Automatic Line Code Generator
 
-A simple web tool to generate numbered lines from input text.
+A web tool to generate barcode labels with JsBarcode.
 
 ## Features
 
-- Input text in a textarea
-- Generate numbered lines
-- Display output in a preformatted block
+- Select Brand, Sub Brand, and Product to generate unique barcodes
+- Generate multiple barcodes at once
+- Barcodes rendered using CODE128 format via JsBarcode
+- Activity history with pagination
+- LocalStorage persistence
 
 ## How to Use
 
-1. Enter your text in the input area.
-2. Click the "Generate Code" button.
-3. View the numbered output below.
+1. Select a Brand from the dropdown.
+2. Select a Sub Brand from the dropdown.
+3. Select a Product from the dropdown.
+4. Enter the number of barcodes to generate.
+5. Click "Generate" to create barcodes.
 
 ## Hosting
 
